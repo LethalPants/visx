@@ -53,17 +53,11 @@ export default function computeStats(numericalArray: number[]) {
   const boxPlot: BoxPlot = {
     min,
     firstQuartile,
-    //! START
     median,
-    // median: points[Math.round(sampleSize / 2)],
-    // !end
     thirdQuartile,
     max,
     outliers,
   };
-  console.log('BOX', boxPlot);
-  console.log('IQR', IQR);
-  console.log('sampleSize', sampleSize);
 
   return {
     boxPlot,
